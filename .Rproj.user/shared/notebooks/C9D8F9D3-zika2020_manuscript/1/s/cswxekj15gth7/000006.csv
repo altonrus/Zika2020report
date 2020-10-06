@@ -1,0 +1,51 @@
+"0","plt_CZS <- ggplot(dt.NS_CZS_quants, aes(x = Prevalence))  + 
+  geom_line(aes(y = mean, linetype = ""Average""), size = 0.8) +
+  geom_line(aes(y=lower_98, linetype = ""98% CrI""))+
+  geom_line(aes(y=upper_98, linetype = ""98% CrI""))+
+  geom_line(aes(y=lower_95, linetype = ""95% CrI""))+
+  geom_line(aes(y=upper_95, linetype = ""95% CrI""))+
+  geom_line(aes(y=lower_80, linetype = ""80% CrI""))+
+  geom_line(aes(y=upper_80, linetype = ""80% CrI""))+
+  #geom_hline(yintercept = 1, color = ""red"")+
+  #annotate(geom = ""text"", x = 1.2e-8, y = 1, label = ""Once-per-year risk"", fontface = 'italic',  vjust=0, hjust=0)+
+  #geom_hline(yintercept = .1, color = ""red"")+
+  #annotate(geom = ""text"", x = 1.2e-8, y = .1, label = ""Once-per-decade risk"", fontface = 'italic', vjust=0, hjust=0)+
+  #geom_vline(xintercept = 56/13580225, color=""red"")+
+  #geom_vline(xintercept = 3/13580225, color=""red"")+
+  #First year
+  geom_segment(aes(x=1e-8, xend =  CZS.coords_plt$x[1], y = CZS.coords_plt$y[1], yend = CZS.coords_plt$y[1]), color=""red"")+
+  geom_segment(aes(x=CZS.coords_plt$x[1], xend =  CZS.coords_plt$x[1], y = 1e-6, yend = CZS.coords_plt$y[1]), color=""red"")+
+  annotate(geom = ""text"", x = 1.2e-8, y = CZS.coords_plt$y[1]*1.4, 
+           label = paste0(round(CZS.coords_plt$y[1]^-1),"" years""), color=""red"", vjust=0, hjust=0)+
+  annotate(geom = ""text"", x = CZS.coords_plt$x[1]*1.1, y = 1e-6*1.4, 
+           label = paste0(""First year\n(2016-17)""), color=""red"", vjust=0, hjust=0)+
+  #2018
+  geom_segment(aes(x=1e-8, xend =  CZS.coords_plt$x[2], y = CZS.coords_plt$y[2], yend = CZS.coords_plt$y[2]), color=""red"")+
+  geom_segment(aes(x=CZS.coords_plt$x[2], xend =  CZS.coords_plt$x[2], y = 1e-6, yend = CZS.coords_plt$y[2]), color=""red"")+
+  annotate(geom = ""text"", x = 1.2e-8, y = CZS.coords_plt$y[2]*1.4, 
+           label = paste0(round(CZS.coords_plt$y[2]^-1),"" years""), color=""red"", vjust=0, hjust=0)+
+  annotate(geom = ""text"", x = CZS.coords_plt$x[2]*1.1, y = 1e-6*1.4, 
+           label = paste0(""2018""), color=""red"", vjust=0, hjust=0)+
+  scale_y_continuous(name = ""Years between outcomes"",
+                     trans = ""log10"",
+                     breaks = c(1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 1e1),
+                     labels = c('1,000,000', '100,000', '10,000', '1000', '100', '10', '1', '0.1'),
+                     expand = c(0,0)) +
+  scale_x_continuous(name = """",
+                     trans = ""log10"",
+                     breaks = c(1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2),
+                     labels = c('0.01', '0.1', '1', '10', '100', '1000', '10,000'),
+                     expand = c(0,0)) +
+  scale_fill_manual(""legend"", values = c(""lightsteelblue1"", ""steelblue2"", ""midnightblue"", ""dodgerblue1""))+
+  scale_linetype_manual(""legend"", values = c(""twodash"", ""dashed"",""dotted"", ""solid""))+
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(colour = ""gray90""),
+        panel.background = element_rect(fill = ""white""),
+        plot.margin = margin(0,25,0,0),
+        legend.position = ""none"",
+        #legend.position = c(.8, .2)),
+        legend.title = element_blank())
+"
+"2","Error in ggplot(dt.NS_CZS_quants, aes(x = Prevalence)) : 
+  object 'dt.NS_CZS_quants' not found
+"

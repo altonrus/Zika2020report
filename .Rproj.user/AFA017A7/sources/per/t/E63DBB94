@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601923024458.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1925869243",
+    "id" : "E63DBB94",
+    "lastKnownWriteTime" : 1601827916,
+    "last_content_update" : 1601827916,
+    "path" : "G:/My Drive/Blood Transfusion/Zika/Zika2020report/ZIKV_sim_2020.py",
+    "project_path" : "ZIKV_sim_2020.py",
+    "properties" : {
+        "cursorPosition" : "855,26",
+        "scrollLine" : "0",
+        "source_window_id" : "",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "python"
+}

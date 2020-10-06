@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601923019215.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "544504719",
+    "id" : "8A21F074",
+    "lastKnownWriteTime" : 1601834356,
+    "last_content_update" : 1601834356,
+    "path" : "G:/My Drive/Blood Transfusion/Zika/Zika2020report/submit_thresh_PSA_2020.py",
+    "project_path" : "submit_thresh_PSA_2020.py",
+    "properties" : {
+        "cursorPosition" : "11,24",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "python"
+}
