@@ -1,10 +1,7 @@
 # Zika2020report
 
-<<<<<<< HEAD
-All analytical code and most data for the paper "Estimated rate of adverse outcomes from transfusion-transmitted Zika in the 50 U.S. States" contained here.
-=======
 All analytical code and data for the paper "Estimating the impact of discontinuing universal screening of donated blood for Zika virus in the 50 U.S. states" contained here.
->>>>>>> b34e21cacbce67c2271308c1a73d32ec55eb7ce2
+
 
 Simulations were run on Stanford's Sherlock computing cluster in batches. The files 'submit_thresh_PSA_ICER.py' (for the 2018 cost-effectiveness analysis) and the file 'submit_thresh_PSA_2020.py' (for the analysis that estimated outcomes at 13 different rates of Zika-infectious donations ranging from 0.01 to 10,000 infectious donations per million) were run in the computing cluster to generate the 10,000 versions of each simulation, each one probabilistically sampling input parameters to reflect uncertainty. They called, respectively, the simulation files 'ZIKV_sim_threshold.py' and 'ZIKV_sim_2020.py', two versions of the simulation. The version of the simulation in 'ZIKV_sim_threshold.py' reports cost-effectiveness results for 3 scenarios (no screening, with universal minipooled nucleic acid testing, and with universal individual donation nucleic acid testing) with the Zika-infectious donation rate from 2018. The version of the simulation in 'ZIKA_sim_2020.py' reports the rates of adverse events in a 'no screening' scenario at 13 different rates of Zika-infectious donations. Both simulations read in a file called 'SCANDATA.csv' from disk. This file contains post-transfusion survival data for cohorts of recipients grouped by age and the number and type of blood components transfused from the Scandinavian Donations and Transfusions (SCANDAT) project (www.scandat.se). This data file is not publicly available and is not included in this repository. Otherwise, all model parameters are self-contained in the simulation files.
 
